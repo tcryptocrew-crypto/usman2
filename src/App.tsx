@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Circle, Hexagon, Triangle, Plus, X, Rocket, Menu } from 'lucide-react';
 import PricingSection from './components/PricingSection';
 import ClientsSection from './components/ClientsSection';
@@ -74,6 +75,13 @@ function App() {
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#FFD700] to-[#FFC000] group-hover:w-full transition-all duration-300"></span>
                 </a>
               ))}
+              <Link
+                to="/portfolio"
+                className="relative text-white/90 hover:text-white transition-colors duration-300 group text-sm font-medium"
+              >
+                Portfolio
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#FFD700] to-[#FFC000] group-hover:w-full transition-all duration-300"></span>
+              </Link>
               <button className="px-6 py-2 bg-[#FFD700]/10 border border-[#FFD700]/30 rounded-full text-[#FFD700] text-sm font-medium transition-all duration-300 hover:bg-[#FFD700] hover:text-black hover:border-transparent">
                 Contact
               </button>
@@ -94,6 +102,13 @@ function App() {
                     {link.name}
                   </a>
                 ))}
+                <Link
+                  to="/portfolio"
+                  className="text-white/90 hover:text-white transition-colors duration-300 text-sm font-medium"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Portfolio
+                </Link>
                 <button className="px-6 py-2 bg-[#FFD700]/10 border border-[#FFD700]/30 rounded-full text-[#FFD700] text-sm font-medium transition-all duration-300 hover:bg-[#FFD700] hover:text-black hover:border-transparent">
                   Contact
                 </button>
