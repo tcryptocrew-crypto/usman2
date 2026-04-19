@@ -23,8 +23,24 @@ const TestimonialsSection = () => {
           Success stories from businesses we've helped grow
         </p>
 
+        {/* Featured Testimonial Video */}
+        <div className="mb-16 flex justify-center">
+          <div className="w-full max-w-2xl rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_40px_rgba(77,192,53,0.08)]">
+            <div className="w-full aspect-video">
+              <iframe
+                src="https://drive.google.com/file/d/1MF_Kn31dsmeVXLTbP0Zev_KkdWQqouHI/preview"
+                width="100%"
+                height="100%"
+                allow="autoplay"
+                className="w-full h-full"
+                title="Client Testimonial"
+              />
+            </div>
+          </div>
+        </div>
+
         <ClientSlider testimonials={testimonialData} />
-        
+
         <div className="mt-24">
           <VideoShowcase videos={showcaseVideos} />
         </div>
