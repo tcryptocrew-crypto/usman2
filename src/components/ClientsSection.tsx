@@ -72,7 +72,7 @@ const ClientsSection = () => {
                   key={index}
                   className="group hover:scale-105 transition-transform duration-300"
                 >
-                  <div className="text-5xl lg:text-6xl font-bold text-white mb-2 group-hover:text-[#FFD700] transition-colors duration-300">
+                  <div className="text-5xl lg:text-6xl font-bold text-white mb-2 group-hover:text-[#4DC035] transition-colors duration-300">
                     {stat.number}
                   </div>
                   <div className="text-xl text-white/70 font-medium">

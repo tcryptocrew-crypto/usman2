@@ -13,9 +13,9 @@ const VideoShowcase: React.FC<VideoShowcaseProps> = ({ videos }) => {
 
   return (
     <div className="relative max-w-[200px] mx-auto">
-      <div className="relative aspect-[9/16] rounded-lg overflow-hidden border border-yellow-500/10
-        transform transition-all duration-300 hover:scale-105 hover:border-yellow-500/30
-        hover:shadow-[0_0_25px_rgba(250,204,21,0.2)]">
+      <div className="relative aspect-[9/16] rounded-lg overflow-hidden border border-[#4DC035]/10
+        transform transition-all duration-300 hover:scale-105 hover:border-[#4DC035]/30
+        hover:shadow-[0_0_25px_rgba(77,192,53,0.2)]">
         <iframe
           src={validVideos[0].videoUrl}
           title={validVideos[0].title}

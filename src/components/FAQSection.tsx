@@ -72,9 +72,9 @@ export default function FAQSection() {
                 {/* Back of card */}
                 <div
                   className="absolute inset-0 flex items-center justify-center p-[1.618rem] rounded-[0.618rem]
-                    bg-gradient-to-br from-[#FFD700]/10 to-black border border-[#FFD700]/20
+                    bg-gradient-to-br from-[#4DC035]/10 to-black border border-[#4DC035]/20
                     backface-hidden transform-style-preserve-3d rotate-y-180
-                    group-hover:shadow-lg group-hover:shadow-[#FFD700]/10 transition-shadow duration-300
+                    group-hover:shadow-lg group-hover:shadow-[#4DC035]/10 transition-shadow duration-300
                     cursor-pointer md:cursor-default"
                 >
                   <p className="text-white/90 text-center">

@@ -59,9 +59,9 @@ const ClientSlider: React.FC<ClientSliderProps> = ({ testimonials }) => {
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div
             key={`${testimonial.id}-${index}`}
-            className="flex-none w-[300px] bg-black/30 backdrop-blur-lg rounded-xl p-6 border border-yellow-500/10
-              transform transition-all duration-300 hover:scale-105 hover:border-yellow-500/30
-              hover:shadow-[0_0_25px_rgba(250,204,21,0.2)]"
+            className="flex-none w-[300px] bg-black/30 backdrop-blur-lg rounded-xl p-6 border border-[#4DC035]/10
+              transform transition-all duration-300 hover:scale-105 hover:border-[#4DC035]/30
+              hover:shadow-[0_0_25px_rgba(77,192,53,0.2)]"
           >
             <div className="flex items-center gap-4 mb-4">
               <img

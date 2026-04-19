@@ -111,7 +111,7 @@ const ReviewsSection = () => {
       {/* Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-purple-600/20 rounded-full blur-[128px] -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#FFD700]/10 rounded-full blur-[128px] translate-y-1/2" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#4DC035]/10 rounded-full blur-[128px] translate-y-1/2" />
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -135,7 +135,7 @@ const ReviewsSection = () => {
                       transform transition-all duration-300 hover:bg-white/10 hover:border-white/20
                       hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]"
                   >
-                    <Quote className="w-8 h-8 text-[#FFD700] mb-4 opacity-50" />
+                    <Quote className="w-8 h-8 text-[#4DC035] mb-4 opacity-50" />
                     <p className="text-white/90 mb-4">{review.text}</p>
                     <div className="flex items-center gap-4">
                       <div>
@@ -158,7 +158,7 @@ const ReviewsSection = () => {
                       transform transition-all duration-300 hover:bg-white/10 hover:border-white/20
                       hover:shadow-[0_0_20px_rgba(255,255,255,0.1)]"
                   >
-                    <Quote className="w-8 h-8 text-[#FFD700] mb-4 opacity-50" />
+                    <Quote className="w-8 h-8 text-[#4DC035] mb-4 opacity-50" />
                     <p className="text-white/90 mb-4">{review.text}</p>
                     <div className="flex items-center gap-4">
                       <div>

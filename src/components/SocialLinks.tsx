@@ -18,8 +18,8 @@ const SocialLinks = () => {
           aria-label={label}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-yellow-400 transition-colors duration-300
-            hover:shadow-[0_0_15px_rgba(250,204,21,0.3)]"
+          className="text-gray-400 hover:text-[#4DC035] transition-colors duration-300
+            hover:shadow-[0_0_15px_rgba(77,192,53,0.3)]"
         >
           <Icon className="w-6 h-6" />
         </a>

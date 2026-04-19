@@ -67,19 +67,19 @@ const PricingSection = () => {
 
           {/* Growth Plan - Highlighted */}
           <div className="relative group">
-            <div className="absolute -inset-[1px] bg-gradient-to-b from-[#FFD700] via-[#FFA500] to-[#FF8C00] 
+            <div className="absolute -inset-[1px] bg-gradient-to-b from-[#4DC035] via-[#4DC035] to-[#4DC035] 
               rounded-2xl opacity-50 blur-sm group-hover:opacity-100 transition-opacity duration-300" />
             
-            <div className="relative h-full bg-black border border-[#FFD700]/30 rounded-2xl p-8
+            <div className="relative h-full bg-black border border-[#4DC035]/30 rounded-2xl p-8
               transition-all duration-300 hover:scale-[1.02]
-              group-hover:border-[#FFD700]/50 group-hover:shadow-[0_0_30px_rgba(255,215,0,0.2)]">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#FFD700] to-[#FFA500]
+              group-hover:border-[#4DC035]/50 group-hover:shadow-[0_0_30px_rgba(77,192,53,0.2)]">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#4DC035] to-[#4DC035]
                 text-black text-sm font-bold px-4 py-1 rounded-full">
                 MOST POPULAR
               </div>
 
               <div className="flex items-center gap-3 mb-6">
-                <Rocket className="w-6 h-6 text-[#FFD700]" />
+                <Rocket className="w-6 h-6 text-[#4DC035]" />
                 <div>
                   <h3 className="text-xl font-bold text-white">Growth</h3>
                   <p className="text-sm text-white/60">For scaling businesses</p>
@@ -89,14 +89,14 @@ const PricingSection = () => {
               <ul className="space-y-4 mb-8">
                 {features.map((feature, index) => (
                   <li key={index} className={`flex items-center gap-3 ${feature.growth ? 'text-white' : 'text-white/30'}`}>
-                    <div className={`w-1.5 h-1.5 rounded-full ${feature.growth ? 'bg-[#FFD700]' : 'bg-white/30'}`} />
+                    <div className={`w-1.5 h-1.5 rounded-full ${feature.growth ? 'bg-[#4DC035]' : 'bg-white/30'}`} />
                     <span className="text-sm">{feature.name}</span>
                   </li>
                 ))}
               </ul>
 
-              <button className="w-full py-3 px-6 rounded-xl bg-gradient-to-r from-[#FFD700] to-[#FFA500]
-                text-black font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,215,0,0.3)]
+              <button className="w-full py-3 px-6 rounded-xl bg-gradient-to-r from-[#4DC035] to-[#4DC035]
+                text-black font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(77,192,53,0.3)]
                 hover:scale-[1.02] active:scale-[0.98]">
                 Book a Call
               </button>

@@ -78,7 +78,7 @@ const ExplainerVideoAds: React.FC = () => {
                 className="flex-shrink-0 w-[75vw] md:w-[calc(33.333%-11px)] max-w-[260px] md:max-w-none"
               >
                 <div className="group relative">
-                  <div className="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 bg-black transition-all duration-300 hover:border-white/20 hover:shadow-[0_0_24px_rgba(255,215,0,0.12)]">
+                  <div className="relative aspect-[3/4] rounded-xl overflow-hidden border border-white/10 bg-black transition-all duration-300 hover:border-white/20 hover:shadow-[0_0_24px_rgba(77,192,53,0.12)]">
                     <img
                       src={video.thumbnail}
                       alt={video.title}
@@ -135,7 +135,7 @@ const ExplainerVideoAds: React.FC = () => {
                 }}
                 className={`transition-all duration-300 rounded-full ${
                   index === currentIndex
-                    ? 'w-6 h-2 bg-[#FFD700]'
+                    ? 'w-6 h-2 bg-[#4DC035]'
                     : 'w-2 h-2 bg-white/20 hover:bg-white/40'
                 }`}
                 aria-label={`Go to video ${index + 1}`}
@@ -159,7 +159,7 @@ const ExplainerVideoAds: React.FC = () => {
               onClick={() => setCurrentIndex(index)}
               className={`transition-all duration-300 rounded-full ${
                 index === currentIndex
-                  ? 'w-7 h-2 bg-[#FFD700]'
+                  ? 'w-7 h-2 bg-[#4DC035]'
                   : 'w-2 h-2 bg-white/20 hover:bg-white/40'
               }`}
               aria-label={`Go to carousel item ${index + 1}`}

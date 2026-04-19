@@ -25,11 +25,11 @@ const PortfolioPage: React.FC = () => {
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
       {/* Navbar */}
       <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-[1200px] px-6 md:px-8">
-        <div className="bg-black/30 backdrop-blur-lg border border-white/10 rounded-2xl md:rounded-full px-6 md:px-12 py-4 shadow-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,215,0,0.5)]">
+        <div className="bg-black/30 backdrop-blur-lg border border-white/10 rounded-2xl md:rounded-full px-6 md:px-12 py-4 shadow-lg transition-all duration-300 hover:shadow-[0_0_15px_rgba(77,192,53,0.5)]">
           <div className="flex items-center justify-between">
             <Link
               to="/"
-              className="flex items-center gap-2 text-[#FFD700] transition-transform duration-300 hover:scale-105"
+              className="flex items-center gap-2 text-[#4DC035] transition-transform duration-300 hover:scale-105"
             >
               <Rocket className="w-6 h-6" />
               <span className="font-bold text-lg">Prestige Media</span>
@@ -50,17 +50,17 @@ const PortfolioPage: React.FC = () => {
                   className="relative text-white/90 hover:text-white transition-colors duration-300 group text-sm font-medium"
                 >
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#FFD700] to-[#FFC000] group-hover:w-full transition-all duration-300" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-[#4DC035] to-[#4DC035] group-hover:w-full transition-all duration-300" />
                 </a>
               ))}
               <Link
                 to="/portfolio"
-                className="relative text-[#FFD700] text-sm font-medium"
+                className="relative text-[#4DC035] text-sm font-medium"
               >
                 Portfolio
-                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#FFD700] to-[#FFC000]" />
+                <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-[#4DC035] to-[#4DC035]" />
               </Link>
-              <button className="px-6 py-2 bg-[#FFD700]/10 border border-[#FFD700]/30 rounded-full text-[#FFD700] text-sm font-medium transition-all duration-300 hover:bg-[#FFD700] hover:text-black hover:border-transparent">
+              <button className="px-6 py-2 bg-[#4DC035]/10 border border-[#4DC035]/30 rounded-full text-[#4DC035] text-sm font-medium transition-all duration-300 hover:bg-[#4DC035] hover:text-black hover:border-transparent">
                 Contact
               </button>
             </div>
@@ -81,12 +81,12 @@ const PortfolioPage: React.FC = () => {
                 ))}
                 <Link
                   to="/portfolio"
-                  className="text-[#FFD700] text-sm font-medium"
+                  className="text-[#4DC035] text-sm font-medium"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Portfolio
                 </Link>
-                <button className="px-6 py-2 bg-[#FFD700]/10 border border-[#FFD700]/30 rounded-full text-[#FFD700] text-sm font-medium transition-all duration-300 hover:bg-[#FFD700] hover:text-black hover:border-transparent">
+                <button className="px-6 py-2 bg-[#4DC035]/10 border border-[#4DC035]/30 rounded-full text-[#4DC035] text-sm font-medium transition-all duration-300 hover:bg-[#4DC035] hover:text-black hover:border-transparent">
                   Contact
                 </button>
               </div>
@@ -98,8 +98,8 @@ const PortfolioPage: React.FC = () => {
       {/* Hero Banner */}
       <section className="relative pt-40 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FFD700]/5 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-[#FFD700]/5 rounded-full blur-3xl" />
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#4DC035]/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-[#4DC035]/5 rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-4xl mx-auto text-center">
           <Link
@@ -110,7 +110,7 @@ const PortfolioPage: React.FC = () => {
             Back to Home
           </Link>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 leading-tight">
-            Our <span className="text-[#FFD700]">Portfolio</span>
+            Our <span className="text-[#4DC035]">Portfolio</span>
           </h1>
           <p className="text-white/60 text-lg md:text-xl max-w-2xl mx-auto">
             A curated showcase of our best video work — from AI-powered ads to brand films that drive real results.
@@ -124,7 +124,7 @@ const PortfolioPage: React.FC = () => {
               { value: '4', label: 'Video Categories' },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-2xl md:text-3xl font-bold text-[#FFD700]">{stat.value}</div>
+                <div className="text-2xl md:text-3xl font-bold text-[#4DC035]">{stat.value}</div>
                 <div className="text-white/50 text-sm mt-1">{stat.label}</div>
               </div>
             ))}
@@ -142,7 +142,7 @@ const PortfolioPage: React.FC = () => {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300 ${
                   activeCategory === cat
-                    ? 'bg-[#FFD700] text-black shadow-[0_0_20px_rgba(255,215,0,0.3)]'
+                    ? 'bg-[#4DC035] text-black shadow-[0_0_20px_rgba(77,192,53,0.3)]'
                     : 'text-white/60 hover:text-white hover:bg-white/10'
                 }`}
               >
@@ -167,7 +167,7 @@ const PortfolioPage: React.FC = () => {
                 onMouseEnter={() => setHoveredId(video.id)}
                 onMouseLeave={() => setHoveredId(null)}
               >
-                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 bg-black/50 transition-all duration-400 group-hover:border-[#FFD700]/30 group-hover:shadow-[0_0_30px_rgba(255,215,0,0.1)]">
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border border-white/10 bg-black/50 transition-all duration-400 group-hover:border-[#4DC035]/30 group-hover:shadow-[0_0_30px_rgba(77,192,53,0.1)]">
                   <img
                     src={video.thumbnail}
                     alt={video.title}
@@ -179,7 +179,7 @@ const PortfolioPage: React.FC = () => {
 
                   {/* Category badge */}
                   <div className="absolute top-3 left-3">
-                    <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-[#FFD700]/20 border border-[#FFD700]/30 text-[#FFD700] backdrop-blur-sm">
+                    <span className="px-2.5 py-1 rounded-full text-xs font-semibold bg-[#4DC035]/20 border border-[#4DC035]/30 text-[#4DC035] backdrop-blur-sm">
                       {video.category}
                     </span>
                   </div>
@@ -196,7 +196,7 @@ const PortfolioPage: React.FC = () => {
                       hoveredId === video.id ? 'opacity-100' : 'opacity-0'
                     }`}
                   >
-                    <div className="w-14 h-14 rounded-full bg-[#FFD700] flex items-center justify-center shadow-[0_0_30px_rgba(255,215,0,0.5)] transition-transform duration-300 group-hover:scale-110">
+                    <div className="w-14 h-14 rounded-full bg-[#4DC035] flex items-center justify-center shadow-[0_0_30px_rgba(77,192,53,0.5)] transition-transform duration-300 group-hover:scale-110">
                       <Play className="w-6 h-6 text-black fill-black ml-0.5" />
                     </div>
                   </div>
@@ -227,19 +227,19 @@ const PortfolioPage: React.FC = () => {
       {/* CTA Banner */}
       <section className="px-4 sm:px-6 lg:px-8 pb-20">
         <div className="max-w-4xl mx-auto">
-          <div className="relative rounded-3xl overflow-hidden border border-[#FFD700]/20 bg-gradient-to-br from-[#FFD700]/10 via-black to-black p-10 md:p-14 text-center">
+          <div className="relative rounded-3xl overflow-hidden border border-[#4DC035]/20 bg-gradient-to-br from-[#4DC035]/10 via-black to-black p-10 md:p-14 text-center">
             <div className="absolute inset-0 pointer-events-none">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#FFD700]/10 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#FFD700]/5 rounded-full blur-3xl" />
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#4DC035]/10 rounded-full blur-3xl" />
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-[#4DC035]/5 rounded-full blur-3xl" />
             </div>
             <div className="relative z-10">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                Ready to create your <span className="text-[#FFD700]">next video?</span>
+                Ready to create your <span className="text-[#4DC035]">next video?</span>
               </h2>
               <p className="text-white/60 text-lg mb-8 max-w-xl mx-auto">
                 Let's bring your vision to life. Book a free strategy call and see how we can grow your brand.
               </p>
-              <button className="px-10 py-4 bg-gradient-to-r from-[#FFD700] to-[#FFC000] rounded-full text-black font-bold text-base transition-all duration-300 hover:shadow-lg hover:shadow-[#FFD700]/30 hover:scale-105">
+              <button className="px-10 py-4 bg-gradient-to-r from-[#4DC035] to-[#4DC035] rounded-full text-black font-bold text-base transition-all duration-300 hover:shadow-lg hover:shadow-[#4DC035]/30 hover:scale-105">
                 Book a Free Call
               </button>
             </div>
